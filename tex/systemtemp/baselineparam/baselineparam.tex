@@ -1,0 +1,183 @@
+\section{Data description and baseline parameterization}
+In this  section we attempt  to understand and parameterize  the radio
+baseline.      We     will     separe    the     various     detectors
+EASIER7/EASIER61/GIGADuck.  The first part  describes the basic cut we
+apply,  the  second describes  the  baseline  parameterization we  can
+obtain.  We analyse  the monitoring data recorded every  400 second at
+the local  station.  The  data contains the  basic information  on the
+radio  trace,  i.e.   the average  and  the  RMS.   But we  have  also
+information  from the  Los Leones  weather station,  for  instance the
+outside temperature and humidity.
+\newpage
+\subsection{a first look at the data and basic cuts}
+We expect the radio baseline to vary because of different sources:
+\begin{itemize}
+\item a  variation of gain:  a variation of  gain is likely  to happen
+  with temperature.
+\item  the microwave flux:  if a  source strong  enough enters  in the
+  field of view  of the antenna. This is what is  expected for the sun
+  flux.
+\item atmospheric effect:  this is also a variation  of the radio flux
+  but it is  due to absorption of clouds, or an  increase of the field
+  due to stormy conditions.
+\end{itemize}
+\subsubsection{overview}
+We  show   the  raw   baseline  over  several   time  scales   in  the
+figure~\ref{fig:scales}.
+\begin{figure}[!ht]
+  \centering
+  \hspace*{-3ex}
+  \subfigure{\includegraphics[width=0.9\linewidth]{oneyear.png}}\\
+  \subfigure{\includegraphics[width=0.9\linewidth]{onemonth.png}}\\
+  \subfigure{\includegraphics[width=0.9\linewidth]{oneday.png}}
+  \caption{Left: quiet sun spectrum, Right: varying component spectrum}
+  \label{fig:scales}
+\end{figure}
+We see  two main modulations,  a long term  variation one on  the year
+long plot, and a daily modulation  on the month long plot. We can also
+notice a  large decrease of the  baseline (i.e. increase  of the radio
+power) for instance in the middle  of February. We will see later that
+this can be related to rain. When there is no such rainy condition the
+typical spread of the baseline  is around 40-50 ADC counts. However we
+notice  clearly  on the  bottom  plot  of figure~\ref{fig:scales}  the
+strong dependence with the outside temperature. \\ When we compare the
+7     antennas     over      the     same     time     period     (see
+figure~\ref{fig:allantennas}),  we notice the  structure has  the same
+shape, but the amplitude of  the variations can be very different: for
+instance stId332 has  variations of the order of  30-40 ADC counts and
+stId 342 has variations of the order of 150 ADC counts)
+\begin{figure}[!ht]
+  \centering
+  \hspace*{-3ex}
+  \subfigure{\includegraphics[width=0.9\linewidth]{allantennas.png}}
+  \caption{}
+  \label{fig:allantennas}
+\end{figure}
+In my opinion, these differences  are due to a different dependence of
+the gain with the temperature.  The  gain itself is not related to the
+system temperature, but it shows  that the 7 LNBf might have different
+characteristics.
+\subsubsection{cuts}
+\paragraph{humidity}
+We  have just  seen that  some periods  look very  different,  see for
+instance around  February 15 in the  fig~\ref{fig:scales}. These large
+baseline seem  to be related to the  rain.  Figure~\ref{fig:rain} show
+the baseline  together with the humidity percentage  measured with Los
+Leones weather station. It is  clear that a humidity larger than 60/70
+\%  has a  strong  effect on  the  baseline.  This  effect  is more  a
+threshold effect than a correlation:  when it rains we can't trust the
+baseline.
+\begin{figure}[!ht]
+  \centering
+  \hspace*{-3ex}
+  \subfigure{\includegraphics[width=0.9\linewidth]{radiohum.png}}
+  \caption{}
+  \label{fig:rain}
+\end{figure}
+In the following we require the humidity to be less than 50 \%.
+
+
+\paragraph{sun/no sun periods}
+The sun is expected to give a contribution to the baseline. We need to
+exclude the period  when a significant signal is  expected in order to
+keep  this effect.   The sun/no  sun periods  are determined  with the
+expected signal calculated  above. We assume a temperature  of 50K for
+the detector and  consider a signal above 5  ADC count as significant.
+The figure~\ref{fig:sunnosun} is  an example of the split  of the data
+in sun/no sun period (also after the humidity cut). 
+\begin{figure}[!ht]
+  \centering
+  \hspace*{-3ex}
+  \subfigure{\includegraphics[width=0.49\linewidth]{sun_nosun.png}}
+  \subfigure{\includegraphics[width=0.49\linewidth]{sun_nosun2.png}}
+  \caption{}
+  \label{fig:sunnosun}
+\end{figure}
+\paragraph{long term variation}
+We have seen that there is  a long term modulation of the baseline. To
+remove this  dependence we filter  out the low frequencies  (below one
+day). 
+
+\subsection{Temperature parameterization}
+The   radio   baseline   is   strongly  dependent   on   the   outside
+temperature. The figures~\ref{fig:ybltemp}  shows the baseline against
+the temperature for one year of data of the stations 332 and 342. This
+can be explained  by a variation of the LNB  gain with the temperature
+\cite{PStempnote}.   When we  perform  a linear  fit  and correct  the
+baseline with this function, we  obtain a baseline distribution with a
+spread of 5 to 16 ADC depending on the station.
+\begin{figure}[!ht]
+  \centering
+  \hspace*{-3ex}
+  \subfigure{\includegraphics[width=0.9\linewidth]{yfit332.png}}\\
+  \subfigure{\includegraphics[width=0.9\linewidth]{yfit342.png}}
+  \caption{}
+  \label{fig:ybltemp}
+\end{figure}
+
+If we perform a daily fit  of the temperature dependence we can obtain
+a   better   correction   of   the   baseline.    We   show   in   the
+figure~\ref{fig:dbltemp} the  fits for  each day on  the left  and the
+resulting corrected distribution on the right. 
+\begin{figure}[!ht]
+  \centering
+  \hspace*{-3ex}
+  \subfigure{\includegraphics[width=0.9\linewidth]{dfit332.png}}\\
+  \subfigure{\includegraphics[width=0.9\linewidth]{dfit342.png}}
+  \caption{}
+  \label{fig:dbltemp}
+\end{figure}
+We  see that  the fits  can be  very different  depending on  the day,
+meaning that other parameters are not accounted for. \\Furthermore, we
+want  to be  able  to compare  a  \textit{non sun}  hypothesis with  a
+\textit{sun}  hypothesis, so  we  need a  prediction  of the  baseline
+during the time we expect the sun ( the sun signal is expected usually
+between  11h00 and  16h00  in local  time,  i.e.  14h00  and 19h00  in
+UTC).  In  the   figure~\ref{fig:prediction1}  we  show  the  baseline
+comparison of  the baseline  between 14:00 and  19:00 for the  days we
+don't expect the sun  signal. 
+\begin{figure}[!ht]
+  \centering
+  \hspace*{-3ex}
+  \subfigure{\includegraphics[width=0.32\linewidth]{yparam332.png}}
+  \subfigure{\includegraphics[width=0.32\linewidth]{yparam333.png}}
+  \subfigure{\includegraphics[width=0.32\linewidth]{yparam341.png}}\\
+  \subfigure{\includegraphics[width=0.32\linewidth]{yparam342.png}}
+  \subfigure{\includegraphics[width=0.32\linewidth]{yparam343.png}}
+  \subfigure{\includegraphics[width=0.32\linewidth]{yparam344.png}}
+  \caption{baseline prediction with the temperature fit over a year}
+  \label{fig:prediction1}
+\end{figure}
+
+\begin{figure}[!ht]
+  \centering
+  \hspace*{-3ex}
+  \subfigure{\includegraphics[width=0.32\linewidth]{yres332.png}}
+  \subfigure{\includegraphics[width=0.32\linewidth]{yres333.png}}
+  \subfigure{\includegraphics[width=0.32\linewidth]{yres341.png}}\\
+  \subfigure{\includegraphics[width=0.32\linewidth]{yres342.png}}
+  \subfigure{\includegraphics[width=0.32\linewidth]{yres343.png}}
+  \subfigure{\includegraphics[width=0.32\linewidth]{yres344.png}}
+  \caption{baseline prediction with the temperature fit over a year}
+  \label{fig:prediction1}
+\end{figure}
+
+\newpage
+\subsection{GIGADuck}
+\begin{figure}[!ht]
+  \centering
+  \hspace*{-3ex}
+  \subfigure{\includegraphics[width=0.9\linewidth]{GDnov.png}}
+%%  \subfigure{\includegraphics[width=0.49\linewidth]{GDjanzoom.png}}
+  \caption{}
+  \label{fig:gigaduck}
+\end{figure}
+
+\begin{figure}[!ht]
+  \centering
+  \hspace*{-3ex}
+  \subfigure{\includegraphics[width=0.9\linewidth]{GDblvstemp.png}}
+%%  \subfigure{\includegraphics[width=0.49\linewidth]{GDjanzoom.png}}
+  \caption{}
+  \label{fig:gigaduck}
+\end{figure}

@@ -1,0 +1,26 @@
+\section{Introduction}
+The  helix  detectors  were   installed  at  the  beginning  of  March
+2015. Since  then some problems arose  and among the  7 installed only
+one seems to work properly. We removed the 7 detectors from the field,
+and   tested   some   part   of    them   in   lab.\\   We   give   in
+table~\ref{tab:detref}  the correspondence  between station  name, LNA
+serial number, antenna number and electronics box number.
+\begin{table}[h!]
+  \centering
+  \caption{correspondence table between detector numbers}
+  \label{tab:detref}
+  \begin{tabular}{|c||c|c|c|c|c|c|c|}
+    \hline
+    station & Gilda  & Santy &  Jorge & Nono & Gringa & Eva & Rula \\
+    \hline
+    elec box number  & 11  & 10 & 09 & 08 & 05 & 03 & 02 \\
+    \hline
+    antenna number & 07 & 01 & 04 & 08 & 05 & 03 & 02 \\
+    \hline
+    LNA serial number & 022970 & 023232 & 023231 & 023230 & 022968 & 022967 & 022969\\
+    \hline
+  \end{tabular}
+\end{table}
+
+
+

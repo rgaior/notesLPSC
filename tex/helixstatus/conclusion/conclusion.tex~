@@ -1,0 +1,15 @@
+\section{conclusions}
+\begin{itemize}
+\item  all the  cones around  the antenna  were damaged,  it  is being
+  repaired  and strengthened  by soldering  again the  cone  base (the
+  larger diameter of the cone) and attaching ropes from the antenna to
+  the cone base.
+\item the hole in the LNA box let the water enter and has to be filled
+  \\ (done with silicon gel)
+\item most  of the LNAs are broken,  the cause of this  failure is not
+  known  yet.   We  should  anyway  look  for   a  protection  against
+  electrostatic discharge.
+\item  some electronics  boxes show  behavior that  is  not understood
+  (different  RMS,  variation  with   time).   We  will  continue  the
+  measurement and potentially bring back some boxes.
+\end{itemize}

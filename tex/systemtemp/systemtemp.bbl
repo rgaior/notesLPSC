@@ -1,0 +1,17 @@
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{1}
+
+\bibitem{solarflux}
+{\em http://www.spaceacademy.net.au/spacelink/solrfi/solrfi.htm\/}, .
+
+\bibitem{nobeyamaobs}
+{\em Nobeyama Radio Observatory
+  (http://solar.nro.nao.ac.jp/norp/html/policy_new.html)\/}, .
+
+\bibitem{nasa}
+{\em Nasa Space Physics Data Facility
+  (http://omniweb.gsfc.nasa.gov/form/dx1.html)\/}, .
+
+\bibitem{PStempnote}
+P.~Stassi, {\em TechEAS 06A - Dependances en temperature 08fev12.pdf\/}, .
+
+\end{thebibliography}\endgroup

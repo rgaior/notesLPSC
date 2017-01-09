@@ -1,0 +1,8 @@
+\section{Simulated data}
+\subsection{Data set}
+The data set  I used was supplied by Imen  and simulated according the
+method described in~\cite{olivierimen}  with an additional factor $\rm
+\frac{1}{2}$  due to  the  polarization. The  data  set contains  1000
+events drawn in  a GIGADuck array. The energy,  zenith and distance to
+shower      axis     distributions      are      shown     in      the
+figure~\ref{fig:distributions}.\\ 

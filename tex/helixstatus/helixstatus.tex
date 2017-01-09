@@ -1,0 +1,112 @@
+\documentclass[twoside, final, 11pt]{articleMine}
+\usepackage[english]{babel} \usepackage{a4wide}
+\usepackage{amsmath,amssymb,accents} \usepackage{epsfig}
+\usepackage{subfigure} \usepackage{units} \usepackage{graphicx}
+\usepackage[displaymath, mathlines, right]{lineno} \usepackage{xspace}
+\usepackage{color} \usepackage{epic,eepic,pstricks}
+\usepackage{acronym} \usepackage{wrapfig,multicol}
+\usepackage{deluxetable} \usepackage{todonotes} 
+\usepackage{hyperref}
+%\usepackage{slashbox}
+\usepackage{lmodern} 
+%\usepackage{caption}
+\linenumbers
+%\usepackage{showlabels}
+\usepackage[draft]{showkeys}
+
+%\usepackage[nolists, tablesfirst]{endfloat}
+\graphicspath{{plots/}}
+\newcommand*\patchAmsMathEnvironmentForLineno[1]{%
+  \expandafter\let\csname old#1\expandafter\endcsname\csname #1\endcsname
+  \expandafter\let\csname oldend#1\expandafter\endcsname\csname end#1\endcsname
+  \renewenvironment{#1}%
+     {\linenomath\csname old#1\endcsname}%
+     {\csname oldend#1\endcsname\endlinenomath}}%
+\newcommand*\patchBothAmsMathEnvironmentsForLineno[1]{%
+  \patchAmsMathEnvironmentForLineno{#1}%
+  \patchAmsMathEnvironmentForLineno{#1*}}%
+\AtBeginDocument{%
+\patchBothAmsMathEnvironmentsForLineno{equation}%
+\patchBothAmsMathEnvironmentsForLineno{align}%
+\patchBothAmsMathEnvironmentsForLineno{flalign}%
+\patchBothAmsMathEnvironmentsForLineno{alignat}%
+\patchBothAmsMathEnvironmentsForLineno{gather}%
+\patchBothAmsMathEnvironmentsForLineno{multline}%
+}
+%\AtBeginFigures{\cleardoublepage}
+%%%%%\parindent 5pt  
+\parskip 1.2pt           % sets spacing between paragraphs
+\def\Offline{\mbox{$\overline{\rm
+Off}$\hspace{.05em}\raisebox{.4ex}{$\underline{\rm line}$}}\xspace}
+\def\OfflineB{\mbox{$\bf\overline{\rm\bf
+Off}$\hspace{.05em}\raisebox{.4ex}{$\bf\underline{\rm\bf line}$}}\xspace}
+
+\def\eq#1{\begin{equation}#1\end{equation}}
+%\def\al#1{\begin{align}#1\end{align}}
+%\def\vc#1{{\bf #1}}
+\def\pt#1{\accentset{\rightharpoonup}{#1}}
+\include{myabbr}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\VEM}{\mbox{VEM}}
+\newcommand{\m}{\mbox{m}}
+
+\let\stdsection\section  
+%\renewcommand\section{\newpage\stdsection}  
+ 
+\begin{document}
+
+%\setpagewiselinenumbers
+\modulolinenumbers[2]
+
+%\linenumbers
+
+
+\renewcommand\linenumberfont{\small\rmfamily}
+\begin{center}
+  \vspace*{-13ex}
+
+  \rule{\linewidth}{0.1mm}  \\[17mm] {\huge  Helix detector status: May 2016}
+     \begin{flushright}
+       \small 
+     
+     \end{flushright}
+
+  % 
+\end{center}
+% 
+\vspace*{2ex} 
+%
+\thispagestyle{empty}
+\noindent
+\begin{abstract}
+  \noindent
+This note  presents the status of  the helix detectors. At  the end of
+May  2016 they  were all  removed  from the  field and  tested in  the
+assembly building  lab.  We present  the status in terms  of mechanics
+and electronics.
+\end{abstract}
+
+%
+\thispagestyle{empty}
+%$\;$
+%\listoftodos
+%\newpage
+\noindent
+\include{intro/intro}
+\include{mechanics/mechanics}
+\include{RF/RF}
+\include{elecbox/elecbox}
+\include{conclusion/conclusion}
+\addcontentsline{toc}{chapter}{Bibliography}                                 
+\bibliographystyle{atlasnote}
+\bibliography{easier}
+%% \newpage
+%% \begin{thebibliography}{9}
+%% \bibitem{gorham}P. W. Gorham et al., Phys. Rev. D 78, 032007 (2008).
+%%   [arXiv:0705.2589 [astro-ph]]
+%% \bibitem{augerpolar} The Pierre Auger Collaboration, Phys. Rev. D 89, 052002 (2014)
+%% \bibitem{crome}
+%% \end{thebibliography}
+
+\end{document}

@@ -1,0 +1,8 @@
+\BOOKMARK [1][-]{section.1}{Expected signal}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Sun flux}{section.1}% 2
+\BOOKMARK [1][-]{section.2}{Data description and baseline parameterization}{}% 3
+\BOOKMARK [2][-]{subsection.2.1}{a first look at the data and basic cuts}{section.2}% 4
+\BOOKMARK [3][-]{subsubsection.2.1.1}{overview}{subsection.2.1}% 5
+\BOOKMARK [3][-]{subsubsection.2.1.2}{cuts}{subsection.2.1}% 6
+\BOOKMARK [2][-]{subsection.2.2}{Temperature parameterization}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.3}{GIGADuck}{section.2}% 8

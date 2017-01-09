@@ -1,0 +1,15 @@
+\newlabel{fig:board}
+\newlabel{fig:compsimdata}
+\newlabel{fig:efficiencymatched}
+\newlabel{fig:estimate}
+\newlabel{fig:exfilter}
+\newlabel{fig:exfit}
+\newlabel{fig:exmatched}
+\newlabel{fig:exsignal}
+\newlabel{fig:m3ex}
+\newlabel{fig:previousmethod}
+\newlabel{fig:signalspectra}
+\newlabel{fig:spectra}
+\newlabel{fig:traceex}
+\newlabel{sec:previousmethod}
+\newlabel{sec:signalsim}

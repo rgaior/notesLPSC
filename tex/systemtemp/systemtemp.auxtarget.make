@@ -1,0 +1,14 @@
+\newlabel{fig:allantennas}
+\newlabel{fig:dbltemp}
+\newlabel{fig:gigaduck}
+\newlabel{fig:prediction1}
+\newlabel{fig:prediction1}
+\newlabel{fig:rain}
+\newlabel{fig:scales}
+\newlabel{fig:spectra}
+\newlabel{fig:spectra}
+\newlabel{fig:spectra}
+\newlabel{fig:spectra}
+\newlabel{fig:spectra}
+\newlabel{fig:sunnosun}
+\newlabel{fig:ybltemp}

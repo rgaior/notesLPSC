@@ -1,0 +1,10 @@
+\newlabel{fig:box9vstime}
+\newlabel{fig:cone}
+\newlabel{fig:lnabox}
+\newlabel{fig:lnas11}
+\newlabel{fig:lnas21}
+\newlabel{fig:peaks}
+\newlabel{fig:setupbox}
+\newlabel{fig:vswrant}
+\newlabel{tab:boxtab}
+\newlabel{tab:detref}

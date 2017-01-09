@@ -1,0 +1,283 @@
+# vim: ft=make
+.PHONY: detsim._graphics
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/babel/babel.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pstricks/pst-fp.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/pstricks/pstricks.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/xkeyval/pst-xkey.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/xkeyval/xkeyval.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/xkeyval/xkvutils.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/xstring/xstring.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/generic/xstring/xstring.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/a4wide/a4wide.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/acronym/acronym.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amssymb.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/base/ifthen.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/bezos/accents.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/bigfoot/suffix.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/eepic/eepic.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/eepic/epic.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/color.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/epsfig.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/lineno/lineno.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/lm/lmodern.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/ms/everyshi.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/ntgclass/a4.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/auxhook.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/math/pgfmath.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/utilities/pgffor.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/pstricks/pstricks.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/subfigure/subfigure.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/todonotes/todonotes.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/tools/calc.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/tools/multicol.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/tools/showkeys.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/tools/xspace.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/units/nicefrac.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/units/units.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/url/url.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/wrapfig/wrapfig.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/xcolor/xcolor.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,/usr/local/texlive/2015/texmf-dist/tex/latex/xkeyval/xkeyval.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,articleMine.cls)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,comparison/comparison.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,conclusion/conclusion.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,deluxetable.sty)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,detsim.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,detsim/detsimulation.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,introduction/introduction.tex)
+detsim.aux detsim.aux.make detsim.d detsim.pdf: $(call path-norm,rfsim/rfsim.tex)
+.SECONDEXPANSION:
+-include plots/blockdiagram.pdf.gpi.d
+detsim.d: $$(call graphics-source,plots/blockdiagram.pdf)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/blockdiagram.pdf)
+-include plots/noise.png.gpi.d
+detsim.d: $$(call graphics-source,plots/noise.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/noise.png)
+-include plots/specphasenoise.png.gpi.d
+detsim.d: $$(call graphics-source,plots/specphasenoise.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/specphasenoise.png)
+-include plots/ratiodiffBW.png.gpi.d
+detsim.d: $$(call graphics-source,plots/ratiodiffBW.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/ratiodiffBW.png)
+-include plots/rationumfilter.png.gpi.d
+detsim.d: $$(call graphics-source,plots/rationumfilter.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/rationumfilter.png)
+-include plots/rationumfilterdiffBW.png.gpi.d
+detsim.d: $$(call graphics-source,plots/rationumfilterdiffBW.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/rationumfilterdiffBW.png)
+-include plots/specnoise.png.gpi.d
+detsim.d: $$(call graphics-source,plots/specnoise.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/specnoise.png)
+-include plots/slidingwindow.png.gpi.d
+detsim.d: $$(call graphics-source,plots/slidingwindow.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/slidingwindow.png)
+-include plots/spectra3.png.gpi.d
+detsim.d: $$(call graphics-source,plots/spectra3.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/spectra3.png)
+-include plots/noisedist.png.gpi.d
+detsim.d: $$(call graphics-source,plots/noisedist.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/noisedist.png)
+-include plots/noiseRFPD.png.gpi.d
+detsim.d: $$(call graphics-source,plots/noiseRFPD.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/noiseRFPD.png)
+-include plots/signalexample.png.gpi.d
+detsim.d: $$(call graphics-source,plots/signalexample.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/signalexample.png)
+-include plots/powerdetDCcarac.png.gpi.d
+detsim.d: $$(call graphics-source,plots/powerdetDCcarac.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/powerdetDCcarac.png)
+-include plots/nocapa_method1.png.gpi.d
+detsim.d: $$(call graphics-source,plots/nocapa_method1.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/nocapa_method1.png)
+-include plots/res_method1.png.gpi.d
+detsim.d: $$(call graphics-source,plots/res_method1.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/res_method1.png)
+-include plots/c_spec.png.gpi.d
+detsim.d: $$(call graphics-source,plots/c_spec.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/c_spec.png)
+-include plots/c_ratio.png.gpi.d
+detsim.d: $$(call graphics-source,plots/c_ratio.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/c_ratio.png)
+-include plots/c_phase.png.gpi.d
+detsim.d: $$(call graphics-source,plots/c_phase.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/c_phase.png)
+-include plots/nc_spec.png.gpi.d
+detsim.d: $$(call graphics-source,plots/nc_spec.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/nc_spec.png)
+-include plots/nc_ratio.png.gpi.d
+detsim.d: $$(call graphics-source,plots/nc_ratio.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/nc_ratio.png)
+-include plots/nc_phase.png.gpi.d
+detsim.d: $$(call graphics-source,plots/nc_phase.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/nc_phase.png)
+-include plots/nocapa_method2.png.gpi.d
+detsim.d: $$(call graphics-source,plots/nocapa_method2.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/nocapa_method2.png)
+-include plots/res_method2.png.gpi.d
+detsim.d: $$(call graphics-source,plots/res_method2.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/res_method2.png)
+-include plots/nocapa_method3.png.gpi.d
+detsim.d: $$(call graphics-source,plots/nocapa_method3.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/nocapa_method3.png)
+-include plots/res_method3.png.gpi.d
+detsim.d: $$(call graphics-source,plots/res_method3.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/res_method3.png)
+-include plots/exampleeasierboard.png.gpi.d
+detsim.d: $$(call graphics-source,plots/exampleeasierboard.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/exampleeasierboard.png)
+-include plots/boardcaracDC.png.gpi.d
+detsim.d: $$(call graphics-source,plots/boardcaracDC.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/boardcaracDC.png)
+-include plots/boardcaracHF.png.gpi.d
+detsim.d: $$(call graphics-source,plots/boardcaracHF.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/boardcaracHF.png)
+-include plots/fftexspec.png.gpi.d
+detsim.d: $$(call graphics-source,plots/fftexspec.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/fftexspec.png)
+-include plots/fftexratio.png.gpi.d
+detsim.d: $$(call graphics-source,plots/fftexratio.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/fftexratio.png)
+-include plots/fftexphase.png.gpi.d
+detsim.d: $$(call graphics-source,plots/fftexphase.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/fftexphase.png)
+-include plots/fitspecboard.png.gpi.d
+detsim.d: $$(call graphics-source,plots/fitspecboard.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/fitspecboard.png)
+-include plots/fitphaseboard.png.gpi.d
+detsim.d: $$(call graphics-source,plots/fitphaseboard.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/fitphaseboard.png)
+-include plots/examplesimboard.png.gpi.d
+detsim.d: $$(call graphics-source,plots/examplesimboard.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/examplesimboard.png)
+-include plots/residualboard.png.gpi.d
+detsim.d: $$(call graphics-source,plots/residualboard.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/residualboard.png)
+-include plots/datatrace.png.gpi.d
+detsim.d: $$(call graphics-source,plots/datatrace.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/datatrace.png)
+-include plots/datarmsdist.png.gpi.d
+detsim.d: $$(call graphics-source,plots/datarmsdist.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/datarmsdist.png)
+-include plots/disteasier7.png.gpi.d
+detsim.d: $$(call graphics-source,plots/disteasier7.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/disteasier7.png)
+-include plots/disteasier47.png.gpi.d
+detsim.d: $$(call graphics-source,plots/disteasier47.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/disteasier47.png)
+-include plots/distgigaduck.png.gpi.d
+detsim.d: $$(call graphics-source,plots/distgigaduck.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/distgigaduck.png)
+-include plots/m1_distdatasimEA7.png.gpi.d
+detsim.d: $$(call graphics-source,plots/m1_distdatasimEA7.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/m1_distdatasimEA7.png)
+-include plots/m1_distdatasimEA61.png.gpi.d
+detsim.d: $$(call graphics-source,plots/m1_distdatasimEA61.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/m1_distdatasimEA61.png)
+-include plots/m1_distdatasimGD.png.gpi.d
+detsim.d: $$(call graphics-source,plots/m1_distdatasimGD.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/m1_distdatasimGD.png)
+-include plots/m2_distdatasimEA7.png.gpi.d
+detsim.d: $$(call graphics-source,plots/m2_distdatasimEA7.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/m2_distdatasimEA7.png)
+-include plots/m2_distdatasimEA61.png.gpi.d
+detsim.d: $$(call graphics-source,plots/m2_distdatasimEA61.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/m2_distdatasimEA61.png)
+-include plots/m2_distdatasimGD.png.gpi.d
+detsim.d: $$(call graphics-source,plots/m2_distdatasimGD.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/m2_distdatasimGD.png)
+-include plots/m3_distdatasimEA7.png.gpi.d
+detsim.d: $$(call graphics-source,plots/m3_distdatasimEA7.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/m3_distdatasimEA7.png)
+-include plots/m3_distdatasimEA61.png.gpi.d
+detsim.d: $$(call graphics-source,plots/m3_distdatasimEA61.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/m3_distdatasimEA61.png)
+-include plots/m3_distdatasimGD.png.gpi.d
+detsim.d: $$(call graphics-source,plots/m3_distdatasimGD.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/m3_distdatasimGD.png)
+-include plots/datasimrmsdist.png.gpi.d
+detsim.d: $$(call graphics-source,plots/datasimrmsdist.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/datasimrmsdist.png)
+-include plots/m2_datasimrmsdist.png.gpi.d
+detsim.d: $$(call graphics-source,plots/m2_datasimrmsdist.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/m2_datasimrmsdist.png)
+-include plots/m3_datasimrmsdist.png.gpi.d
+detsim.d: $$(call graphics-source,plots/m3_datasimrmsdist.png)
+detsim.pdf detsim._graphics: $$(call graphics-target,plots/m3_datasimrmsdist.png)
