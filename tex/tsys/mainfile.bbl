@@ -1,0 +1,13 @@
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{1}
+
+\bibitem{spa}
+I.~Reda and A.~Andreas, {\em {Solar position algorithm for solar radiation
+  applications}\/},  Solar Energy {\bf 76} (2004)  577--589.
+
+\bibitem{sundata}
+\url{http://omniweb.gsfc.nasa.gov/form/dx1.html}.
+
+\bibitem{sunparam}
+\url{http://www.spaceacademy.net.au/spacelink/solrfi/solrfi.htm}.
+
+\end{thebibliography}\endgroup

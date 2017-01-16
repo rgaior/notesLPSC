@@ -1,0 +1,4 @@
+\section{Data selection}
+The radio  baseline we  observe has variation  on different  scales. A
+daily modulation is  due to the temperature and  will be corrected for
+in section~\ref{sec:tempdep}.

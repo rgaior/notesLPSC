@@ -1,0 +1,122 @@
+\documentclass[twoside, final, 11pt]{articleMine}
+\usepackage[english]{babel} \usepackage{a4wide}
+\usepackage{amsmath,amssymb,accents} \usepackage{epsfig}
+\usepackage{subfigure} \usepackage{units} \usepackage{graphicx}
+\usepackage[displaymath, mathlines, right]{lineno} \usepackage{xspace}
+\usepackage{color} \usepackage{epic,eepic,pstricks}
+\usepackage{acronym} \usepackage{wrapfig,multicol}
+\usepackage{deluxetable} \usepackage{todonotes} 
+\usepackage{hyperref}
+\usepackage{float}
+%\usepackage{slashbox}
+\usepackage{lmodern} 
+%\usepackage{caption}
+\linenumbers
+%\usepackage{showlabels}
+\usepackage[draft]{showkeys}
+
+%\usepackage[nolists, tablesfirst]{endfloat}
+\graphicspath{{plots/}}
+\newcommand*\patchAmsMathEnvironmentForLineno[1]{%
+  \expandafter\let\csname old#1\expandafter\endcsname\csname #1\endcsname
+  \expandafter\let\csname oldend#1\expandafter\endcsname\csname end#1\endcsname
+  \renewenvironment{#1}%
+     {\linenomath\csname old#1\endcsname}%
+     {\csname oldend#1\endcsname\endlinenomath}}%
+\newcommand*\patchBothAmsMathEnvironmentsForLineno[1]{%
+  \patchAmsMathEnvironmentForLineno{#1}%
+  \patchAmsMathEnvironmentForLineno{#1*}}%
+\AtBeginDocument{%
+\patchBothAmsMathEnvironmentsForLineno{equation}%
+\patchBothAmsMathEnvironmentsForLineno{align}%
+\patchBothAmsMathEnvironmentsForLineno{flalign}%
+\patchBothAmsMathEnvironmentsForLineno{alignat}%
+\patchBothAmsMathEnvironmentsForLineno{gather}%
+\patchBothAmsMathEnvironmentsForLineno{multline}%
+}
+%\AtBeginFigures{\cleardoublepage}
+%%%%%\parindent 5pt  
+\parskip 1.2pt           % sets spacing between paragraphs
+\def\Offline{\mbox{$\overline{\rm
+Off}$\hspace{.05em}\raisebox{.4ex}{$\underline{\rm line}$}}\xspace}
+\def\OfflineB{\mbox{$\bf\overline{\rm\bf
+Off}$\hspace{.05em}\raisebox{.4ex}{$\bf\underline{\rm\bf line}$}}\xspace}
+
+\def\eq#1{\begin{equation}#1\end{equation}}
+%\def\al#1{\begin{align}#1\end{align}}
+%\def\vc#1{{\bf #1}}
+\def\pt#1{\accentset{\rightharpoonup}{#1}}
+\include{myabbr}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\VEM}{\mbox{VEM}}
+\newcommand{\m}{\mbox{m}}
+
+\let\stdsection\section  
+%\renewcommand\section{\newpage\stdsection}  
+ 
+\begin{document}
+
+%\setpagewiselinenumbers
+\modulolinenumbers[2]
+
+%\linenumbers
+
+
+\renewcommand\linenumberfont{\small\rmfamily}
+\begin{center}
+  \vspace*{-13ex}
+
+  \rule{\linewidth}{0.1mm}  \\[17mm] {\huge  System  noise temperature
+    measurement of EASIER/GIGADuck detectors}
+     \begin{flushright}
+       \small 
+     
+     \end{flushright}
+
+  % 
+\end{center}
+% 
+\vspace*{2ex} 
+%
+\thispagestyle{empty}
+\noindent
+\begin{abstract}
+  \noindent
+  The  system noise  temperature is  a key  characteristic of  a radio
+  detector such  as EASIER's or GIGADuck's, since  it directly relates
+  to the sensitivity.  Previous measurement of this characteristic for
+  these antennas  were done  in laboratory by  the CROME group  and in
+  situ  by  MIDAS  group.   We  present a  measurement  of  the  noise
+  temperature performed  in situ for the GIGADuck  detectors using the
+  Sun's microwave flux  as a calibration source.  The  sun's signal in
+  the  EASIER  detectors  being  too  small, we  set  up  a  dedicated
+  measurement.   We present  in this  note the  methods to  select and
+  correct the monitoring data for  GIGADuck and the method to retrieve
+  the  temperature  for  EASIER.    We  also  detail  the  uncertainty
+  calculation to finally obtain a  noise temperature of $T_{sys} = ???
+  \pm $ for GIGADuck and $T_{sys} = ???  \pm $ for EASIER.
+\end{abstract}
+
+%
+\thispagestyle{empty}
+%$\;$
+%\listoftodos
+\noindent
+
+\newpage
+
+\include{expectedsignal/expectedsignal}
+\include{gigaduck/gigaduck}
+%\include{baselineparam/baselineparam}
+%\include{signalfit/signalfit}
+%\include{uncertainties/uncertainties}
+%%\include{description/description}
+%%\include{conclusion/conclusion}
+
+\addcontentsline{toc}{chapter}{Bibliography}                                 
+\bibliographystyle{atlasnote}
+\bibliography{thebib}
+%% \newpage
+
+\end{document}
